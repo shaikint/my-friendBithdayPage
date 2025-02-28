@@ -1,11 +1,17 @@
 
-.r1{
-	background: linear-gradient(to left, yellow,green,blue);
-	height:60px;
-	width: 105%;
-	top: 0;
-	left: 0;
-	position: fixed;
+.r1 {
+    background: linear-gradient(to left, yellow, green, blue);
+    height: 60px;
+    width: 100%;  /* Change from 105% to 100% */
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: hidden; /* Prevents horizontal scroll */
+}
+.r2col2 h1, .r2col2 h2, .r2col2 h3 {
+    text-align: center;
+    padding: 10px; /* Reduce excess padding */
+    font-size: 5vw; /* Responsive font size */
 }
 
 
@@ -57,14 +63,14 @@ h1{
 .r2col1{
 	top: 60px;
 	height: 100vh;
-	width:50%;
+	width:100%;
 	object-fit: cover;
 	position: relative;
 	opacity: 0.9;
 }
 
 .r2col2 {
-    width: 50% !important;
+    width: 100% !important;
     padding-left: 54%;
     height: 100vh;
     width: 50%;
@@ -74,12 +80,13 @@ h1{
 
 
 
-.r2col1 img{
-    height: 100vh;
-    width: 50% !important;
-    left: 0;
-    position: fixed !important;
+.r2col1 img {
+    width: 100% !important; /* Ensures full width on mobile */
+    height: auto;
+    max-height: 500px; /* Restricts image size */
+    position: relative !important;
 }
+
 .r2col2 h4{
 	color: gray;
 	text-align:left;
@@ -151,13 +158,28 @@ p {
 }
 
 
-.container{
-	top: 20px;
-	height:330px;
-	margin: 25px;
-	width: 415px !important;
-
+.container {
+    width: 90% !important; /* Responsive width */
+    max-width: 400px; /* Prevents it from getting too wide */
+    margin: auto; /* Centers it */
 }
+@media (max-width: 768px) {
+    .r1col1, .r1col3 {
+        display: none; /* Hides icons on small screens */
+    }
+    .r1col2 h1 {
+        font-size: 6vw; /* Smaller font for mobile */
+    }
+    .r2col1, .r2col2 {
+        width: 100%; /* Stacks content */
+    }
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
 
 
 
