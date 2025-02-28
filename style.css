@@ -1,21 +1,11 @@
-html, body {
-    width: 100%;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-}
 
-.r1 {
-    background: linear-gradient(to left, yellow, green, blue);
-    height: 60px;
-    width: 100%;  /* Change from 105% to 100% */
-    top: 0;
-    left: 0;
-    position: fixed;
-    overflow: hidden; /* Prevents horizontal scroll */
-}
-.r2col2 h1, .r2col2 h2, .r2col2 h3 {
-    text-align: center;
-    padding: 10px; /* Reduce excess padding */
-    font-size: 5vw; /* Responsive font size */
+.r1{
+	background: linear-gradient(to left, yellow,green,blue);
+	height:60px;
+	width: 105%;
+	top: 0;
+	left: 0;
+	position: fixed;
 }
 
 
@@ -41,6 +31,13 @@ h1{
 	color: red;
 }
 
+
+
+
+
+
+
+
 .r2{
     height: 1500px;
     width: 100%;
@@ -60,30 +57,29 @@ h1{
 .r2col1{
 	top: 60px;
 	height: 100vh;
-	width:100%;
+	width:50%;
 	object-fit: cover;
 	position: relative;
 	opacity: 0.9;
 }
 
 .r2col2 {
-    width: 100% !important; /* Full width on mobile */
-    padding-left: 10px !important; /* Reduce padding */
-    padding-right: 10px !important;
-    height: auto;
-    float: none;
+    width: 50% !important;
+    padding-left: 54%;
+    height: 100vh;
+    width: 50%;
+    float: left; 
+    opacity: 0.9;
 }
 
 
 
-.r2col1 img {
-    width: 100% !important;
-    max-width: 100%;
-    height: auto;
-    position: relative;
+.r2col1 img{
+    height: 100vh;
+    width: 50% !important;
+    left: 0;
+    position: fixed !important;
 }
-
-
 .r2col2 h4{
 	color: gray;
 	text-align:left;
@@ -155,12 +151,15 @@ p {
 }
 
 
-.container {
-    width: 100% !important;
-    max-width: 100%;
-    margin: auto;
-    overflow-x: auto;
+.container{
+	top: 20px;
+	height:330px;
+	margin: 25px;
+	width: 415px !important;
+
 }
+
+
 
 header{
 	font-size: 2rem;
@@ -169,36 +168,12 @@ header{
 }
 
 
-table {
-    width: 100% !important;
-    max-width: 100%;
-    display: block;
-    overflow-x: auto;
-}
-
-@media (max-width: 768px) {
-    .r1col1, .r1col3 {
-        display: none; /* Hides icons on small screens */
-    }
-    .r1col2 h1 {
-        font-size: 6vw; /* Responsive heading */
-    }
-    .r2col1, .r2col2 {
-        width: 100% !important; /* Stacks content */
-    }
-    .r2col2 {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-    .container {
-        width: 100%;
-        max-width: 100%;
-        margin: auto;
-    }
-    table {
-        width: 100% !important;
-        max-width: 100%;
-    }
+table{
+	padding: 2px;
+	border: 2px solid gray;
+background-color: hotpink;
+cursor: pointer;
+box-shadow:2px 3px 3px black;
 }
 
 
@@ -209,26 +184,6 @@ table {
 	font-size: 25px;
 	color: black;
 }
-
-/* Make images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto; /* Centers images */
-}
-
-/* Fix large text issues */
-h1 {
-    font-size: 8vw; /* Responsive text */
-    text-align: center;
-}
-
-/* Ensure proper spacing */
-.container-fluid {
-    padding: 10px;
-}
-
 script {
 	color: red;
 }
