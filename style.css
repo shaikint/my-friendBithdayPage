@@ -184,6 +184,26 @@ box-shadow:2px 3px 3px black;
 	font-size: 25px;
 	color: black;
 }
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto; /* Centers images */
+}
+
+/* Fix large text issues */
+h1 {
+    font-size: 8vw; /* Responsive text */
+    text-align: center;
+}
+
+/* Ensure proper spacing */
+.container-fluid {
+    padding: 10px;
+}
+
 script {
 	color: red;
 }
