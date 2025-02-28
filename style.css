@@ -1,0 +1,189 @@
+
+.r1{
+	background: linear-gradient(to left, yellow,green,blue);
+	height:60px;
+	width: 105%;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+
+
+.r1col1{
+	float: left;
+	margin-left: 55px;
+	font-size: calc(1.375rem + 1.5vw);
+	color: red;
+	animation-duration: 5s;
+}
+
+
+h1{
+	text-align: center ;
+	font-family: 'Dancing Script', cursive;
+}
+
+.r1col3{
+	float: right;
+	margin-right: 55px;
+	padding-right: 2px;
+	font-size: calc(1.375rem + 1.5vw);
+	color: red;
+}
+
+
+
+
+
+
+
+
+.r2{
+    height: 1500px;
+    width: 100%;
+    left: 0px;
+    z-index: -2;
+    overflow: hidden;
+    background-size: cover;
+    padding: 0px !important;
+    padding-top: 30px;
+    position: absolute;
+}
+* .r2col2{
+	box-sizing: content-box;
+}
+
+
+.r2col1{
+	top: 60px;
+	height: 100vh;
+	width:50%;
+	object-fit: cover;
+	position: relative;
+	opacity: 0.9;
+}
+
+.r2col2 {
+    width: 50% !important;
+    padding-left: 54%;
+    height: 100vh;
+    width: 50%;
+    float: left; 
+    opacity: 0.9;
+}
+
+
+
+.r2col1 img{
+    height: 100vh;
+    width: 50% !important;
+    left: 0;
+    position: fixed !important;
+}
+.r2col2 h4{
+	color: gray;
+	text-align:left;
+	font-family: 'Arizonia', cursive;
+}
+
+h2{
+    color: white !important;
+	position: absolute;
+	bottom: 184px;
+    left:17%;
+    font-family: 'Pinyon Script', cursive;
+    text-shadow: 2px 2px 8px white;
+}
+.name{
+	position: fixed;
+	border-color: black;
+}
+
+.r2col2 h3{
+	color: gray;
+	font-family: 'Arizonia', cursive;
+}
+.r2col2 h1{
+	color: gray;
+	text-align: right;
+	padding-right: 88px;
+	font-family: 'Arizonia', cursive;
+}
+p {
+    margin-right: 60px;
+    text-align: justify;
+    border-right:5px ;
+
+}
+
+.A img{
+	right: 0 !important;
+	float: left;
+	margin: 2px;
+	height: 141px;
+    width: 138px !important;
+    position: relative !important;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.c img{
+	right: 0 !important;
+	float: right;
+	margin: 2px;
+	height: 141px;
+    width: 138px !important;
+    position: relative !important;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+.B img{
+	right: 0 !important;
+	float: left;
+	margin: 2px;
+	height: 141px;
+    width: 138px !important;
+    position: relative !important;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+.container{
+	top: 20px;
+	height:330px;
+	margin: 25px;
+	width: 415px !important;
+
+}
+
+
+
+header{
+	font-size: 2rem;
+	font-family: 'Nabla', cursive;
+	text-align: center;
+}
+
+
+table{
+	padding: 2px;
+	border: 2px solid gray;
+background-color: hotpink;
+cursor: pointer;
+box-shadow:2px 3px 3px black;
+}
+
+
+.para{
+	text-align: center;
+	line-height:60px ;
+	font-family: 'Ephesis', cursive;
+	font-size: 25px;
+	color: black;
+}
+script {
+	color: red;
+}
